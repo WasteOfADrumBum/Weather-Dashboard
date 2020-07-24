@@ -1,5 +1,5 @@
 #forecast-container {
-	border: 1px solid lightgrey;
+	border: 1px solid #c2c3c5;
 	padding: 20px;
 	line-height: 40px;
 }
@@ -16,9 +16,117 @@
 	font-weight: 500;
 }
 
-#img-div {
+.row .bg-light {
+	background-color: silver !important;
+	/* https://codingwiki.fandom.com/wiki/CSS_Patterns */
+	background-image: radial-gradient(
+			circle at 100% 150%,
+			#eaebeb 24%,
+			white 24%,
+			white 28%,
+			#eaebeb 28%,
+			#eaebeb 36%,
+			white 36%,
+			white 40%,
+			transparent 40%,
+			transparent
+		),
+		radial-gradient(
+			circle at 0 150%,
+			#eaebeb 24%,
+			white 24%,
+			white 28%,
+			#eaebeb 28%,
+			#eaebeb 36%,
+			white 36%,
+			white 40%,
+			transparent 40%,
+			transparent
+		),
+		radial-gradient(
+			circle at 50% 100%,
+			white 10%,
+			#eaebeb 10%,
+			#eaebeb 23%,
+			white 23%,
+			white 30%,
+			#eaebeb 30%,
+			#eaebeb 43%,
+			white 43%,
+			white 50%,
+			#eaebeb 50%,
+			#eaebeb 63%,
+			white 63%,
+			white 71%,
+			transparent 71%,
+			transparent
+		),
+		radial-gradient(
+			circle at 100% 50%,
+			white 5%,
+			#eaebeb 5%,
+			#eaebeb 15%,
+			white 15%,
+			white 20%,
+			#eaebeb 20%,
+			#eaebeb 29%,
+			white 29%,
+			white 34%,
+			#eaebeb 34%,
+			#eaebeb 44%,
+			white 44%,
+			white 49%,
+			transparent 49%,
+			transparent
+		),
+		radial-gradient(
+			circle at 0 50%,
+			white 5%,
+			#eaebeb 5%,
+			#eaebeb 15%,
+			white 15%,
+			white 20%,
+			#eaebeb 20%,
+			#eaebeb 29%,
+			white 29%,
+			white 34%,
+			#eaebeb 34%,
+			#eaebeb 44%,
+			white 44%,
+			white 49%,
+			transparent 49%,
+			transparent
+		);
+	background-size: 100px 50px;
+	border: 1px solid #c2c3c5;
 }
 
-.btn {
+h1 {
+	text-align: center;
+	padding: 10px 10px 20px 10px;
 	color: white;
+	background-color: none;
+	text-shadow: -4px -4px 0 #000, 2px -4px 0 #000, -4px 4px 0 #000,
+		3px 3px 0 #000;
+	font-family: Anime;
+}
+
+.h1,
+h1 {
+	font-size: 5.5rem !important;
+}
+
+.clear {
+	text-align: left;
+	padding-left: 0;
+}
+
+#clear-button {
+	margin-top: 10px;
+	background-color: #fff;
+	border: 1px solid #c2c3c5;
+}
+
+#today {
+	background-color: #eaebeb;
 }
