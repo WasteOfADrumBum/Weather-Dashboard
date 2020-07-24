@@ -1,0 +1,24 @@
+#forecast-container {
+	border: 1px solid lightgrey;
+	padding: 20px;
+	line-height: 40px;
+}
+
+#name-div {
+	font-size: 25px;
+	font-weight: 500;
+	padding-right: 5px;
+	float: left;
+}
+
+#five-title {
+	font-size: 25px;
+	font-weight: 500;
+}
+
+#img-div {
+}
+
+.btn {
+	color: white;
+}
