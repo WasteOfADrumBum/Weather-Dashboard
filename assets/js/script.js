@@ -125,7 +125,6 @@ $(document).ready(function () {
 				);
 
 				// merge and add to page
-
 				$("#today").append(forecastUl);
 
 				// call follow-up api endpoints
@@ -182,35 +181,39 @@ $(document).ready(function () {
 
 				// Forecast card container
 				var fiveContent = $("<div>", {
+					class: "five-card-container",
 					id: "five-content",
 				});
 
 				// loop over all forecasts (by 3-hour increments)
+				console.log("-- || Start Forecast for loop || --");
 				// Console TypeError: 'length' Undefined
 				for (var i = 0; i < data.list.length; i++) {
-					console.log("-- || Start Forecast for loop || --");
 					// only look at forecasts around 3:00pm
 					if (data.list[i].dt_txt.indexOf("15:00:00") !== -1) {
 						// create html elements for a bootstrap card
 						var fiveCard = $("<div>", {
+							class: "five-card-body",
 							id: "five-card",
 						});
 
 						// Forecast Time Conversion
-						console.log("-- || Forecast Time Conversion || --");
+						console.log("-- || Forecast Time Loop Conversion || --");
 						var fivesec = data.list[i].dt;
 						var fiveforecastdate = new Date(fivesec * 1000);
 						var fivedatestr = fiveforecastdate.toLocaleDateString();
 
 						// Date
-						var fiveDate = $("<div>", {
+						var fiveDate = $("<h5>", {
+							class: "five-card-title",
 							id: "five-date",
 						});
 						fiveDate.text(fivedatestr);
 						console.log("5-Date:", fivedatestr);
 
 						// IMG Icon
-						var fiveImg = $("<div>", {
+						var fiveImg = $("<p>", {
+							class: "five-card-body",
 							id: "five-img",
 						});
 						// Render Icon
@@ -225,14 +228,16 @@ $(document).ready(function () {
 						console.log("5-Icon:", data.list[i].weather[0].icon);
 
 						// Temp
-						var fiveTemp = $("<div>", {
+						var fiveTemp = $("<p>", {
+							class: "five-card-body",
 							id: "five-temp",
 						});
 						fiveTemp.text("Temperature: " + data.list[i].main.temp + " °F");
 						console.log("5-Temp", data.list[i].main.temp);
 
 						//Humidity
-						var fiveHumidity = $("<div>", {
+						var fiveHumidity = $("<p>", {
+							class: "five-card-body",
 							id: "five-humid",
 						});
 						fiveHumidity.text("Humidity: " + data.list[i].main.humidity + "%");
@@ -241,10 +246,12 @@ $(document).ready(function () {
 						fiveCard.append(fiveDate, fiveIconImg, fiveTemp, fiveHumidity);
 
 						// merge together and put on page
-						$("#forecast #five-content").append(fiveCard);
+						$("#five-content").append(fiveCard);
+
+						console.log("-- || End Loop #", i, " || --");
 					}
 				}
-
+				// Append Forecast Title and Container
 				$("#forecast").append(fiveTitle, fiveContent);
 			},
 			error: function (xhr, status, error) {
