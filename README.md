@@ -38,9 +38,9 @@ The following image demonstrates the application functionality:
 
 You are required to submit the following for review:
 
-- The URL of the deployed application.
+- The URL of the deployed application. https://wasteofadrumbum.github.io/Weather-Dashboard/
 
-- The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+- The URL of the GitHub repository. Give the repository a unique name and include a README describing the project. https://github.com/WasteOfADrumBum/Weather-Dashboard
 
 ---
 
