@@ -96,7 +96,7 @@ $(document).ready(function () {
 				liName.text(data.name + " (" + datestr + ") ");
 
 				var liImg = $("<div>", { id: "img-div" });
-				// Render Icon
+				// Render Icon © Tim A.
 				var iconImg = $("<img>");
 				iconImg.attr(
 					"src",
