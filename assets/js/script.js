@@ -181,7 +181,7 @@ $(document).ready(function () {
 
 				// Forecast card container
 				var fiveContent = $("<div>", {
-					class: "five-card-container",
+					class: "card-container",
 					id: "five-content",
 				});
 
@@ -193,9 +193,10 @@ $(document).ready(function () {
 					if (data.list[i].dt_txt.indexOf("15:00:00") !== -1) {
 						// create html elements for a bootstrap card
 						var fiveCard = $("<div>", {
-							class: "five-card-body",
+							class: "card",
 							id: "five-card",
 						});
+						console.log("Card:", fiveCard);
 
 						// Forecast Time Conversion
 						console.log("-- || Forecast Time Loop Conversion || --");
@@ -205,7 +206,7 @@ $(document).ready(function () {
 
 						// Date
 						var fiveDate = $("<h5>", {
-							class: "five-card-title",
+							class: "card-title",
 							id: "five-date",
 						});
 						fiveDate.text(fivedatestr);
@@ -213,7 +214,7 @@ $(document).ready(function () {
 
 						// IMG Icon
 						var fiveImg = $("<p>", {
-							class: "five-card-body",
+							class: "card-body",
 							id: "five-img",
 						});
 						// Render Icon
@@ -229,7 +230,7 @@ $(document).ready(function () {
 
 						// Temp
 						var fiveTemp = $("<p>", {
-							class: "five-card-body",
+							class: "card-body",
 							id: "five-temp",
 						});
 						fiveTemp.text("Temperature: " + data.list[i].main.temp + " °F");
@@ -237,16 +238,17 @@ $(document).ready(function () {
 
 						//Humidity
 						var fiveHumidity = $("<p>", {
-							class: "five-card-body",
+							class: "card-body",
 							id: "five-humid",
 						});
 						fiveHumidity.text("Humidity: " + data.list[i].main.humidity + "%");
 						console.log("5-Humid:", data.list[i].main.humidity);
 
+						// the next 5 lines are where my problem is...
 						fiveCard.append(fiveDate, fiveIconImg, fiveTemp, fiveHumidity);
 
 						// merge together and put on page
-						$("#five-content").append(fiveCard);
+						$("#forecast .card-container").append(fiveCard);
 
 						console.log("-- || End Loop #", i, " || --");
 					}
