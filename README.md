@@ -30,9 +30,17 @@ WHEN I open the weather dashboard
 THEN I am presented with the last searched city forecast
 ```
 
-The following image demonstrates the application functionality:
+The following image demonstrates the assigned application functionality:
 
 ![weather dashboard demo](./assets/images/06-server-side-apis-homework-demo.png)
+
+The following image demonstrates the end result of the application functionality:
+
+![my weather dashboard demo](./assets/images/weatherdashboard.gif)
+
+The following image demonstrates the mobile result of the application functionality:
+
+![my mobile weather dashboard demo](./assets/images/weatherdashboardphone.gif)
 
 ## Review
 
