@@ -3,6 +3,7 @@ $(document).ready(function () {
 
 	// when search btn is clicked capture the value entered
 	$("#search-button").on("click", function () {
+		event.preventDefault();
 		var searchValue = $("#search-value").val();
 		// clear input box =after hitting search
 		$("#search-value").val("");
