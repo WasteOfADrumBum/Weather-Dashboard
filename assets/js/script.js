@@ -85,9 +85,21 @@ $(document).ready(function () {
 				var forecastdate = new Date(sec * 1000);
 				var timestr = forecastdate.toLocaleTimeString();
 				var datestr = forecastdate.toLocaleDateString();
+				// Day of the week conversion
+				var daystr = forecastdate.getUTCDay();
+				var weekday = new Array(7);
+				weekday[0] = "Sunday";
+				weekday[1] = "Monday";
+				weekday[2] = "Tuesday";
+				weekday[3] = "Wednesday";
+				weekday[4] = "Thursday";
+				weekday[5] = "Friday";
+				weekday[6] = "Saturday";
+				var weekdaystr = weekday[daystr];
 				console.log("All Time Data", forecastdate);
 				console.log("Local Time:", timestr);
 				console.log("Local Date:", datestr);
+				console.log("Day of the Week:", weekdaystr);
 
 				// create html content for current weather
 				var forecastUl = $("<div>", { id: "forecast-container" });
@@ -187,7 +199,7 @@ $(document).ready(function () {
 
 				// loop over all forecasts (by 3-hour increments)
 				console.log("-- || Start Forecast for loop || --");
-				// Console TypeError: 'length' Undefined
+				// var i = 0 makes forecast start on current day
 				for (var i = 0; i < data.list.length; i++) {
 					// only look at forecasts around 3:00pm
 					if (data.list[i].dt_txt.indexOf("15:00:00") !== -1) {
@@ -203,8 +215,26 @@ $(document).ready(function () {
 						var fivesec = data.list[i].dt;
 						var fiveforecastdate = new Date(fivesec * 1000);
 						var fivedatestr = fiveforecastdate.toLocaleDateString();
+						// Day of the week conversion
+						var fivedaystr = fiveforecastdate.getUTCDay();
+						var fiveweekday = new Array(7);
+						fiveweekday[0] = "Sunday";
+						fiveweekday[1] = "Monday";
+						fiveweekday[2] = "Tuesday";
+						fiveweekday[3] = "Wednesday";
+						fiveweekday[4] = "Thursday";
+						fiveweekday[5] = "Friday";
+						fiveweekday[6] = "Saturday";
+						var fiveweekdaystr = fiveweekday[fivedaystr];
 
 						// Date
+						var fiveDay = $("<h4>", {
+							class: "card-title",
+							id: "five-day",
+						});
+						fiveDay.text(fiveweekdaystr);
+						console.log("5-Day Day of the Week", fiveweekdaystr);
+
 						var fiveDate = $("<h5>", {
 							class: "card-title",
 							id: "five-date",
@@ -245,7 +275,13 @@ $(document).ready(function () {
 						console.log("5-Humid:", data.list[i].main.humidity);
 
 						// the next 5 lines are where my problem is...
-						fiveCard.append(fiveDate, fiveIconImg, fiveTemp, fiveHumidity);
+						fiveCard.append(
+							fiveDay,
+							fiveDate,
+							fiveIconImg,
+							fiveTemp,
+							fiveHumidity,
+						);
 
 						// merge together and put on page
 						$("#forecast .card-container").append(fiveCard);
