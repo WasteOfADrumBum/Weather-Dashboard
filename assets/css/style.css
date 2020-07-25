@@ -181,8 +181,6 @@ footer {
 	width: 100%;
 	height: auto;
 	line-height: 5px;
-	bottom: 0;
-	position: fixed;
 	text-size-adjust: 10px;
 }
 
