@@ -170,7 +170,7 @@ h1 {
 /* || FOOTER || */
 
 footer {
-	padding: 15px 0;
+	padding: 15px 0 25px;
 	/* Keeps Footer at the bottom of the page */
 	color: #fff;
 	/* Center footer content */
@@ -204,8 +204,8 @@ footer a:hover {
 }
 
 .btn-lg {
-	padding: 3.5px !important;
-	line-height: 1.5;
+	padding: 4.5px !important;
+	line-height: 1.5 !important;
 	font-size: 14px !important;
 }
 
