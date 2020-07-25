@@ -9,11 +9,17 @@
 	font-weight: 500;
 	padding-right: 5px;
 	float: left;
+	color: #343a40;
 }
 
 #five-title {
 	font-size: 25px;
 	font-weight: 500;
+	color: #343a40;
+}
+
+h5 .mt-1 {
+	color: #343a40;
 }
 
 .row .bg-light {
@@ -129,4 +135,25 @@ h1 {
 
 #today {
 	background-color: #eaebeb;
+}
+
+.card-container {
+	display: inline-flex;
+	flex-direction: row !important;
+}
+
+.card {
+	display: inline-table;
+	padding: 10px;
+	margin: 10px;
+	color: white;
+	background-color: #8c8588 !important;
+}
+
+.card img {
+	max-width: 50px;
+}
+
+.card-body {
+	padding: 0 !important;
 }

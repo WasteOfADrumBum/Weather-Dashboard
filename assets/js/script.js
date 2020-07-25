@@ -250,6 +250,9 @@ $(document).ready(function () {
 						// merge together and put on page
 						$("#forecast .card-container").append(fiveCard);
 
+						// render cards in container
+						fiveContent.append(fiveCard);
+
 						console.log("-- || End Loop #", i, " || --");
 					}
 				}
