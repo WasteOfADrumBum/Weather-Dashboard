@@ -226,6 +226,10 @@ footer a:hover {
 		width: 100%;
 	}
 	.btn-lg {
-		font-size: 12px !important;
+		font-size: 10px !important;
+	}
+	.h1,
+	h1 {
+		font-size: 3.5rem !important;
 	}
 }
