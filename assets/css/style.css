@@ -1,3 +1,11 @@
+.row {
+	margin-bottom: 180px;
+}
+header {
+	border-bottom: 8px solid white;
+	box-shadow: 0 5px 8px -5px #333;
+}
+
 #forecast-container {
 	border: 1px solid #c2c3c5;
 	padding: 20px;
@@ -159,6 +167,55 @@ h1 {
 	padding: 0 !important;
 }
 
+/* || FOOTER || */
+
+footer {
+	padding: 15px 0;
+	/* Keeps Footer at the bottom of the page */
+	color: #fff;
+	/* Center footer content */
+	text-align: center;
+	background: #343a40;
+	border-top: 8px solid white;
+	box-shadow: 0 5px 8px 5px #333;
+	width: 100%;
+	height: auto;
+	line-height: 5px;
+	bottom: 0;
+	position: fixed;
+	text-size-adjust: 10px;
+}
+
+footer a {
+	color: white;
+}
+
+footer a:visited {
+	color: lightgrey;
+}
+
+footer a:hover {
+	color: darkgrey;
+	text-decoration: none;
+}
+
+.contact {
+	/* button and text size */
+	margin-top: 7px;
+	font-variant: small-caps;
+}
+
+.btn-lg {
+	padding: 3.5px !important;
+	line-height: 1.5;
+	font-size: 14px !important;
+}
+
+.copyright {
+	margin-top: 14px;
+	font-size: 12px;
+}
+
 @media screen and (max-width: 600px) {
 	header,
 	.row {
@@ -167,5 +224,8 @@ h1 {
 	.card-container {
 		flex-direction: column !important;
 		width: 100%;
+	}
+	.btn-lg {
+		font-size: 12px !important;
 	}
 }
