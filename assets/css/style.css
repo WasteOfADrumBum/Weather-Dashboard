@@ -1,3 +1,11 @@
+html,
+body {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	margin: 0;
+}
+
 .row {
 	margin-bottom: 30px;
 }
@@ -167,15 +175,14 @@ h1 {
 	padding: 0 !important;
 }
 
-.container-fluid {
-	position: relative;
+#main-content-container {
+	flex: 1 0 auto;
 }
 
 /* || FOOTER || */
 
 footer {
-	position: absolute;
-	bottom: 0;
+	flex: 0 0 auto;
 	padding: 15px 0 25px;
 	/* Keeps Footer at the bottom of the page */
 	color: #fff;
@@ -185,7 +192,6 @@ footer {
 	border-top: 8px solid white;
 	box-shadow: 0 5px 8px 5px #333;
 	width: 100%;
-	height: auto;
 	line-height: 5px;
 	text-size-adjust: 10px;
 }
