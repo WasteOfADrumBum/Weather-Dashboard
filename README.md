@@ -32,7 +32,11 @@ Using the [OpenWeather API](https://openweathermap.org/api) to retrieve weather 
 
 ## Features
 
-- City Search - View current weather conditions - View 5-day weather forecast - Prsents city name, date, condition icon, temperature, humidity, wind speed and UV index - Maintains a search history
+- City Search 
+- View current weather conditions 
+- View 5-day weather forecast 
+- Prsents city name, date, condition icon, temperature, humidity, wind speed and UV index 
+- Maintains a search history
 
 ## Example Gif
 
