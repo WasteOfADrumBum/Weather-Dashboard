@@ -1,55 +1,79 @@
-# 06 Server-Side APIs: Weather Dashboard
+# **Server-Side APIs: Weather Dashboard**
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+![GitHub license](https://img.shields.io/badge/Made%20by-%40wasteofadrumbum-green)
 
-Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions. Use `localStorage` to store any persistent data.
+## Description
 
-## User Story
+Using the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities.
 
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
+# Technologies Used
 
-## Acceptance Criteria
+![GitHub top language](https://img.shields.io/github/languages/top/wasteofadrumbum/Weather-Dashboard?color=green&logo=github&logoColor=green)
+![GitHub language count](https://img.shields.io/github/languages/count/wasteofadrumbum/Weather-Dashboard?color=green&logo=github&logoColor=green)
 
-```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-WHEN I open the weather dashboard
-THEN I am presented with the last searched city forecast
-```
+## Table of contents
 
-The following image demonstrates the assigned application functionality:
+- [Installation](#installation)
+- [Instructions](#instructions)
+- [Features](#features)
+- [Example Gif](#example-gif)
+- [Repository Link](#Repository)
+- [Test](#Test)
+- [Licence](#Licence)
+- [GitHub Info](#GitHub)
 
-![weather dashboard demo](./assets/images/06-server-side-apis-homework-demo.png)
+## Installation
 
-The following image demonstrates the end result of the application functionality:
+[OpenWeather API](https://openweathermap.org/api)
 
-![my weather dashboard demo](./assets/images/weatherdashboard.gif)
-
-The following image demonstrates the mobile result of the application functionality:
-
-![my mobile weather dashboard demo](./assets/images/weatherdashboardphone.gif)
-
-## Review
-
-You are required to submit the following for review:
+## Instructions
 
 - The URL of the deployed application. https://wasteofadrumbum.github.io/Weather-Dashboard/
 
-- The URL of the GitHub repository. Give the repository a unique name and include a README describing the project. https://github.com/WasteOfADrumBum/Weather-Dashboard
+## Features
 
----
+- City Search - View current weather conditions - View 5-day weather forecast - Prsents city name, date, condition icon, temperature, humidity, wind speed and UV index - Maintains a search history
 
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+## Example Gif
+
+<img src="assets\images\weatherdashboard.gif" width="500" />
+
+## Repository
+
+![GitHub repo size](https://img.shields.io/github/repo-size/wasteofadrumbum/Weather-Dashboard?logo=github)
+
+![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/wasteofadrumbum/Weather-Dashboard)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/wasteofadrumbum/Weather-Dashboard)
+
+![GitHubopen pull request](https://img.shields.io/github/issues-pr/wasteofadrumbum/Weather-Dashboard)
+![GitHub closed pull request](https://img.shields.io/github/issues-pr-closed/wasteofadrumbum/Weather-Dashboard)
+
+![GitHub Stars](https://img.shields.io/github/stars/wasteofadrumbum/Weather-Dashboard?style=social)
+
+- [Project Repo](https://github.com/wasteofadrumbum/Weather-Dashboard)
+
+## Contributors
+
+![GitHub contributors](https://img.shields.io/github/contributors/wasteofadrumbum/Weather-Dashboard)
+![GitHub Forks](https://img.shields.io/github/forks/wasteofadrumbum/Weather-Dashboard?label=Fork)
+![GitHub Watchers](https://img.shields.io/github/watchers/wasteofadrumbum/Weather-Dashboard?label=Watch)
+
+## Test
+
+![GitHub test](https://img.shields.io/badge/test-100%25-success)
+
+![GitHub open issues](https://img.shields.io/github/issues/wasteofadrumbum/Weather-Dashboard)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/wasteofadrumbum/Weather-Dashboard)
+
+## Licence
+
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+
+## GitHub
+
+<img src="https://avatars0.githubusercontent.com/u/66432859?v=4" width="250" />
+
+- Joshua M Small
+- [GitHub Profile](https://github.com/wasteofadrumbum)
+- <JMSmall89@gmail.com>
+- ![GitHub Followers](https://img.shields.io/github/followers/wasteofadrumbum?label=Follow)
